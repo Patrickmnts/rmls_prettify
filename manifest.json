@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "RMLS Prettify",
+  "description": "This extension will reskin a RMLS page to make it more better :)",
+  "version": "0.0.1",
+
+  "content_scripts": [
+    {
+      "matches": [
+        "http://www.rmlsweb.com/v2/public/*"
+      ],
+      "js": [
+             "src/client/app/index.jsx",
+             "src/client/public/bundle.js"
+            ]
+    }
+  ]
+}
